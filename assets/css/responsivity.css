@@ -1,4 +1,5 @@
-@media (min-width: 768px) { /* Tablet */
+@media (min-width: 768px) {
+  /* Tablet */
   /* Tablet */
   #burguerMenu {
     display: none;
@@ -23,7 +24,11 @@
     border-radius: 10px 10px 0 0;
   }
   .liAncor:hover {
-    background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(141,6,6,0.14329481792717091) 100%);
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(141, 6, 6, 0.14329481792717091) 100%
+    );
     border-bottom: 1px solid var(--red_principal);
     opacity: 1;
   }
@@ -54,45 +59,60 @@
   }
 }
 
-@media (min-width: 992px) { /* Notebook */
-    .ancorDesktopWrapper {
-        gap: 24px;
-    }
+@media (min-width: 992px) {
+  /* Notebook */
+  .ancorDesktopWrapper {
+    gap: 24px;
+  }
 
-    .liAncor {
-        width: max-content;
-    }
+  .liAncor {
+    width: max-content;
+  }
 
-    .cardsLimit {
-        grid-template-columns: repeat(3, 1fr);
-    }
-    .cardsAboutUsBox {
-        grid-template-columns: repeat(3, 1fr);
-    }
+  .cardsLimit {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .cardsAboutUsBox {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 @media (min-width: 1200px) {
-    .mainSection {
-        background-size: cover;
-        height: 75vh;
-    }
+  /* Desktop+ */
+  header {
+    display: flex;
+    justify-content: center;
+  }
 
-    .fourthSection {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .aboutUsFlex {
-        width: 100%;
-        max-width: 1400px;
-    }
-    .cardsLimit {
-        width: 100%;
-        max-width: 1400px;
-        gap: 40px 20px;
-    }
-    .cardsAboutUsBox {
-        width: 100%;
-        max-width: 1400px;
-    }
+  .headerBox {
+    display: flex;
+    width: 100%;
+    max-width: 1400px;
+  }
+  .headerFlex {
+    width: 100%;
+  }
+  .mainSection {
+    background-size: cover;
+    height: 75vh;
+  }
+
+  .fourthSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .aboutUsFlex {
+    width: 100%;
+    max-width: 1400px;
+  }
+  .cardsLimit {
+    width: 100%;
+    max-width: 1400px;
+    gap: 40px 20px;
+  }
+  .cardsAboutUsBox {
+    width: 100%;
+    max-width: 1400px;
+  }
 }
