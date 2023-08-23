@@ -19,6 +19,7 @@ body {
 /* header */
 header {
   position: fixed;
+  z-index: 5;
   width: 100%;
   top: 0;
   background-color: var(--white);
@@ -89,6 +90,10 @@ header {
   color: var(--white);
 }
 
+.navDesktopBox {
+  display: none;
+}
+
 .liAncor {
   display: flex;
   align-items: center;
@@ -124,6 +129,7 @@ a {
   align-items: center;
   justify-content: center;
   height: 100%;
+  margin-top: 56px;
 }
 
 .principalTitle {
@@ -156,6 +162,9 @@ a {
 
 /* Cards */
 .thirdSection {
+  display: flex;
+  justify-content: center;
+
   background-color: var(--gray_background);
   padding: 40px;
 }
@@ -219,8 +228,9 @@ a {
   padding: 24px;
 }
 
-.cardsAboutBox {
+.cardsAboutUsBox {
   display: grid;
+  justify-items: center;
   grid-template-columns: repeat(1, 1fr);
   gap: 20px;
 }
@@ -238,13 +248,15 @@ a {
 .cardAboutItem {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  width: 100%;
   text-align: center;
   gap: 16px;
 }
 
 .aboutImgItem {
   width: 100%;
-  max-width: 480px;
+  max-width: 380px;
   border-radius: 1000px;
 }
 
