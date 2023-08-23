@@ -21,3 +21,17 @@ function rodaMenu() {
   }
 }
 menuBurguer.addEventListener("click", rodaMenu);
+
+const buttonShow = document.getElementById("showModal");
+const buttonClose = document.getElementById("closeModal")
+const modal = document.getElementById("modal");
+
+buttonShow.addEventListener("click", () => {
+  modal.showModal();
+})
+buttonClose.addEventListener("mouseover", () => {
+  buttonClose.style.cursor = "pointer";
+})
+buttonClose.addEventListener("click", () => {
+  modal.close();
+})
